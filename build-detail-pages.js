@@ -59,7 +59,10 @@ function generateProductHtml(p) {
   <meta property="og:description"
     content="Detail spesifikasi ${escapeHtml(p.name)}, ${escapeHtml(p.moq)}. Hubungi kami untuk penawaran harga terbaik.">
   <meta property="og:image" content="https://www.totebagmalang.id/${p.img}">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/img/favicon.png" type="image/png">
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -81,7 +84,7 @@ function generateProductHtml(p) {
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://www.totebagmalang.id/detail/${p.id}.html",
+      "url": "https://www.totebagmalang.id/produk/${p.id}.html",
       "priceCurrency": "IDR",
       "price": "0",
       "priceValidUntil": "2027-12-31",
