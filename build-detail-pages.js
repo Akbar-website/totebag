@@ -92,107 +92,180 @@ function generateProductHtml(p) {
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    "name": "${escapeHtml(p.name)}",
-    "image": [
-      "https://totebag-ochre.vercel.app/${p.img}"
-    ],
-    "description": "${escapeHtml(p.desc)}",
-    "sku": "TBM-${p.id.toUpperCase().replace(/-/g,'').substring(0,20)}",
-    "mpn": "TBM-${p.id.toUpperCase().replace(/-/g,'').substring(0,20)}",
-    "category": "${escapeHtml(p.category)}",
-    "material": "${escapeHtml(p.bahan)}",
-    "brand": {
-      "@type": "Brand",
-      "name": "Totebag Malang"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "2",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "review": [
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
+        "@type": "Product",
+        "@id": "https://totebag-ochre.vercel.app/produk/${p.id}#product",
+        "name": "${escapeHtml(p.name)}",
+        "image": [
+          "https://totebag-ochre.vercel.app/${p.img}"
+        ],
+        "description": "${escapeHtml(p.desc)}",
+        "sku": "TBM-${p.id.toUpperCase().replace(/-/g,'').substring(0,20)}",
+        "mpn": "TBM-${p.id.toUpperCase().replace(/-/g,'').substring(0,20)}",
+        "category": "${escapeHtml(p.category)}",
+        "material": "${escapeHtml(p.bahan)}",
+        "keywords": "tote bag custom, ${escapeHtml(p.category.toLowerCase())}, sablon logo, ${escapeHtml(p.bahan.split(' ').slice(0,3).join(' '))}",
+        "brand": {
+          "@type": "Brand",
+          "@id": "https://totebag-ochre.vercel.app/#org",
+          "name": "Totebag Malang"
+        },
+        "manufacturer": {
+          "@type": "Organization",
+          "@id": "https://totebag-ochre.vercel.app/#org",
+          "name": "Totebag Malang"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
           "ratingValue": "5",
+          "reviewCount": "2",
           "bestRating": "5",
           "worstRating": "1"
         },
-        "author": {
-          "@type": "Person",
-          "name": "Pelanggan Totebag Malang"
-        },
-        "datePublished": "2026-09-10",
-        "reviewBody": "Kualitas sangat memuaskan, jahitan rapi dan bahan sesuai deskripsi. Proses produksi cepat dan responsif."
-      },
-      {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Tim Pengadaan Instansi"
-        },
-        "datePublished": "2026-10-05",
-        "reviewBody": "Sudah repeat order beberapa kali. Harga kompetitif, sablon logo tajam, dan pengiriman tepat waktu ke seluruh Indonesia."
-      }
-    ],
-    "offers": {
-      "@type": "Offer",
-      "url": "https://totebag-ochre.vercel.app/produk/${p.id}",
-      "priceCurrency": "IDR",
-      "price": "0",
-      "priceValidUntil": "2027-12-31",
-      "validFrom": "2026-01-01",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition",
-      "seller": {
-        "@type": "Organization",
-        "name": "Totebag Malang",
-        "url": "https://totebag-ochre.vercel.app/"
-      },
-      "shippingDetails": {
-        "@type": "OfferShippingDetails",
-        "shippingRate": {
-          "@type": "MonetaryAmount",
-          "value": "0",
-          "currency": "IDR"
-        },
-        "shippingDestination": {
-          "@type": "DefinedRegion",
-          "addressCountry": "ID"
-        },
-        "deliveryTime": {
-          "@type": "ShippingDeliveryTime",
-          "handlingTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 7,
-            "maxValue": 14,
-            "unitCode": "DAY"
+        "review": [
+          {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Pelanggan Totebag Malang"
+            },
+            "datePublished": "2026-09-10",
+            "reviewBody": "Kualitas sangat memuaskan, jahitan rapi dan bahan sesuai deskripsi. Proses produksi cepat dan responsif."
           },
-          "transitTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 1,
-            "maxValue": 5,
-            "unitCode": "DAY"
+          {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Tim Pengadaan Instansi"
+            },
+            "datePublished": "2026-10-05",
+            "reviewBody": "Sudah repeat order beberapa kali. Harga kompetitif, sablon logo tajam, dan pengiriman tepat waktu ke seluruh Indonesia."
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "@id": "https://totebag-ochre.vercel.app/produk/${p.id}#offer",
+          "url": "https://totebag-ochre.vercel.app/produk/${p.id}",
+          "priceCurrency": "IDR",
+          "price": "0",
+          "priceValidUntil": "2027-12-31",
+          "validFrom": "2026-01-01",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@type": "Organization",
+            "@id": "https://totebag-ochre.vercel.app/#org",
+            "name": "Totebag Malang",
+            "url": "https://totebag-ochre.vercel.app/"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "IDR"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "ID"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 7,
+                "maxValue": 14,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 5,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "ID",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
           }
         }
       },
-      "hasMerchantReturnPolicy": {
-        "@type": "MerchantReturnPolicy",
-        "applicableCountry": "ID",
-        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+      {
+        "@type": "WebPage",
+        "@id": "https://totebag-ochre.vercel.app/produk/${p.id}#webpage",
+        "url": "https://totebag-ochre.vercel.app/produk/${p.id}",
+        "name": "${escapeHtml(p.name)} | Totebag Malang",
+        "description": "${escapeHtml(p.desc)}",
+        "inLanguage": "id-ID",
+        "isPartOf": { "@id": "https://totebag-ochre.vercel.app/#website" },
+        "about": { "@id": "https://totebag-ochre.vercel.app/produk/${p.id}#product" },
+        "datePublished": "2026-01-01",
+        "dateModified": "2026-11-10",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://totebag-ochre.vercel.app/" },
+            { "@type": "ListItem", "position": 2, "name": "Portfolio Produk", "item": "https://totebag-ochre.vercel.app/produk" },
+            { "@type": "ListItem", "position": 3, "name": "${escapeHtml(p.name)}", "item": "https://totebag-ochre.vercel.app/produk/${p.id}" }
+          ]
+        },
+        "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", ".product-desc"] }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://totebag-ochre.vercel.app/produk/${p.id}#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Berapa minimal order ${escapeHtml(p.name)}?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Minimal order ${escapeHtml(p.name)} di Totebag Malang adalah ${escapeHtml(p.moq)}. Semakin banyak kuantitas, semakin hemat biaya per pcs. Hubungi kami via WhatsApp untuk penawaran harga terbaik."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Berapa lama produksi ${escapeHtml(p.name)}?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lead time produksi ${escapeHtml(p.name)} adalah ${escapeHtml(p.leadTime)}. Waktu produksi dihitung setelah desain final disetujui dan DP dibayarkan. Tersedia opsi produksi ekspres untuk kebutuhan mendesak."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apa bahan yang digunakan untuk ${escapeHtml(p.name)}?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "${escapeHtml(p.name)} menggunakan bahan ${escapeHtml(p.bahan)}. Tersedia dalam berbagai pilihan warna dan bisa dikustom ukuran sesuai kebutuhan. Metode cetak tersedia: ${escapeHtml(p.cetak)}."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah bisa custom ukuran untuk ${escapeHtml(p.name)}?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya, ukuran standar ${escapeHtml(p.name)} adalah ${escapeHtml(p.ukuran)}, namun bisa dikustom sesuai kebutuhan. Konsultasikan ukuran, warna bahan, dan desain logo via WhatsApp sebelum produksi."
+            }
+          }
+        ]
       }
-    }
+    ]
   }
   </script>
 

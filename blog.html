@@ -51,29 +51,64 @@
   "@graph": [
     {
       "@type": "Blog",
-      "@id": "https://totebag-ochre.vercel.app/blog.html#blog",
-      "url": "https://totebag-ochre.vercel.app/blog.html",
-      "name": "Blog Totebag Malang",
+      "@id": "https://totebag-ochre.vercel.app/blog#webpage",
+      "url": "https://totebag-ochre.vercel.app/blog",
+      "name": "Blog & Panduan Tote Bag Custom | Totebag Malang",
+      "description": "Artikel panduan seputar tote bag custom: pilihan bahan, teknik sablon, minimal order, dan tips pesan tote bag untuk event dan promosi.",
+      "inLanguage": "id-ID",
+      "isPartOf": {
+        "@id": "https://totebag-ochre.vercel.app/#website"
+      },
       "publisher": {
-        "@type": "Organization",
-        "name": "Totebag Malang"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://totebag-ochre.vercel.app/blog.html#breadcrumb",
-      "itemListElement": [
+        "@id": "https://totebag-ochre.vercel.app/#org"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Beranda",
+            "item": "https://totebag-ochre.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog & Panduan",
+            "item": "https://totebag-ochre.vercel.app/blog"
+          }
+        ]
+      },
+      "blogPost": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Beranda",
-          "item": "https://totebag-ochre.vercel.app/"
+          "@type": "BlogPosting",
+          "headline": "Panduan Lengkap Minimal Order (MOQ) Tote Bag Custom di Malang",
+          "url": "https://totebag-ochre.vercel.app/blog/minimal-order",
+          "datePublished": "2026-11-06",
+          "author": {
+            "@type": "Person",
+            "name": "Muhammad Akbar Nugraha"
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog & Panduan",
-          "item": "https://totebag-ochre.vercel.app/blog.html"
+          "@type": "BlogPosting",
+          "headline": "Perbandingan Bahan Tote Bag: Drill vs Cotton vs Kanvas vs Non-Woven",
+          "url": "https://totebag-ochre.vercel.app/blog/perbandingan-bahan",
+          "datePublished": "2026-11-06",
+          "author": {
+            "@type": "Person",
+            "name": "Muhammad Akbar Nugraha"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Cara Menyiapkan File Logo untuk Sablon Tote Bag Custom",
+          "url": "https://totebag-ochre.vercel.app/blog/menyiapkan-file-logo",
+          "datePublished": "2026-11-06",
+          "author": {
+            "@type": "Person",
+            "name": "Muhammad Akbar Nugraha"
+          }
         }
       ]
     }

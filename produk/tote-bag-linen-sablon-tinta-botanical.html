@@ -51,107 +51,180 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    "name": "Tote Bag Linen Sablon Tinta Botanical",
-    "image": [
-      "https://totebag-ochre.vercel.app/assets/img/linenbotanical.webp"
-    ],
-    "description": "Serat rami tanaman alami bertekstur unik, sejuk, dan memiliki sirkulasi udara baik. Menghadirkan konsep minimalis bersih bernuansa estetika Jepang (Wabi-Sabi) yang anggun untuk galeri seni, kafe, dan studio arsitektur.",
-    "sku": "TBM-TOTEBAGLINENSABLONTI",
-    "mpn": "TBM-TOTEBAGLINENSABLONTI",
-    "category": "Linen",
-    "material": "Serat Rami Alami Premium Linen Ramie Breathable",
-    "brand": {
-      "@type": "Brand",
-      "name": "Totebag Malang"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "2",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "review": [
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
+        "@type": "Product",
+        "@id": "https://totebag-ochre.vercel.app/produk/tote-bag-linen-sablon-tinta-botanical#product",
+        "name": "Tote Bag Linen Sablon Tinta Botanical",
+        "image": [
+          "https://totebag-ochre.vercel.app/assets/img/linenbotanical.webp"
+        ],
+        "description": "Serat rami tanaman alami bertekstur unik, sejuk, dan memiliki sirkulasi udara baik. Menghadirkan konsep minimalis bersih bernuansa estetika Jepang (Wabi-Sabi) yang anggun untuk galeri seni, kafe, dan studio arsitektur.",
+        "sku": "TBM-TOTEBAGLINENSABLONTI",
+        "mpn": "TBM-TOTEBAGLINENSABLONTI",
+        "category": "Linen",
+        "material": "Serat Rami Alami Premium Linen Ramie Breathable",
+        "keywords": "tote bag custom, linen, sablon logo, Serat Rami Alami",
+        "brand": {
+          "@type": "Brand",
+          "@id": "https://totebag-ochre.vercel.app/#org",
+          "name": "Totebag Malang"
+        },
+        "manufacturer": {
+          "@type": "Organization",
+          "@id": "https://totebag-ochre.vercel.app/#org",
+          "name": "Totebag Malang"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
           "ratingValue": "5",
+          "reviewCount": "2",
           "bestRating": "5",
           "worstRating": "1"
         },
-        "author": {
-          "@type": "Person",
-          "name": "Pelanggan Totebag Malang"
-        },
-        "datePublished": "2026-09-10",
-        "reviewBody": "Kualitas sangat memuaskan, jahitan rapi dan bahan sesuai deskripsi. Proses produksi cepat dan responsif."
-      },
-      {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Tim Pengadaan Instansi"
-        },
-        "datePublished": "2026-10-05",
-        "reviewBody": "Sudah repeat order beberapa kali. Harga kompetitif, sablon logo tajam, dan pengiriman tepat waktu ke seluruh Indonesia."
-      }
-    ],
-    "offers": {
-      "@type": "Offer",
-      "url": "https://totebag-ochre.vercel.app/produk/tote-bag-linen-sablon-tinta-botanical",
-      "priceCurrency": "IDR",
-      "price": "0",
-      "priceValidUntil": "2027-12-31",
-      "validFrom": "2026-01-01",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition",
-      "seller": {
-        "@type": "Organization",
-        "name": "Totebag Malang",
-        "url": "https://totebag-ochre.vercel.app/"
-      },
-      "shippingDetails": {
-        "@type": "OfferShippingDetails",
-        "shippingRate": {
-          "@type": "MonetaryAmount",
-          "value": "0",
-          "currency": "IDR"
-        },
-        "shippingDestination": {
-          "@type": "DefinedRegion",
-          "addressCountry": "ID"
-        },
-        "deliveryTime": {
-          "@type": "ShippingDeliveryTime",
-          "handlingTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 7,
-            "maxValue": 14,
-            "unitCode": "DAY"
+        "review": [
+          {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Pelanggan Totebag Malang"
+            },
+            "datePublished": "2026-09-10",
+            "reviewBody": "Kualitas sangat memuaskan, jahitan rapi dan bahan sesuai deskripsi. Proses produksi cepat dan responsif."
           },
-          "transitTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 1,
-            "maxValue": 5,
-            "unitCode": "DAY"
+          {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Tim Pengadaan Instansi"
+            },
+            "datePublished": "2026-10-05",
+            "reviewBody": "Sudah repeat order beberapa kali. Harga kompetitif, sablon logo tajam, dan pengiriman tepat waktu ke seluruh Indonesia."
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "@id": "https://totebag-ochre.vercel.app/produk/tote-bag-linen-sablon-tinta-botanical#offer",
+          "url": "https://totebag-ochre.vercel.app/produk/tote-bag-linen-sablon-tinta-botanical",
+          "priceCurrency": "IDR",
+          "price": "0",
+          "priceValidUntil": "2027-12-31",
+          "validFrom": "2026-01-01",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@type": "Organization",
+            "@id": "https://totebag-ochre.vercel.app/#org",
+            "name": "Totebag Malang",
+            "url": "https://totebag-ochre.vercel.app/"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "IDR"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "ID"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 7,
+                "maxValue": 14,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 5,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "ID",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
           }
         }
       },
-      "hasMerchantReturnPolicy": {
-        "@type": "MerchantReturnPolicy",
-        "applicableCountry": "ID",
-        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+      {
+        "@type": "WebPage",
+        "@id": "https://totebag-ochre.vercel.app/produk/tote-bag-linen-sablon-tinta-botanical#webpage",
+        "url": "https://totebag-ochre.vercel.app/produk/tote-bag-linen-sablon-tinta-botanical",
+        "name": "Tote Bag Linen Sablon Tinta Botanical | Totebag Malang",
+        "description": "Serat rami tanaman alami bertekstur unik, sejuk, dan memiliki sirkulasi udara baik. Menghadirkan konsep minimalis bersih bernuansa estetika Jepang (Wabi-Sabi) yang anggun untuk galeri seni, kafe, dan studio arsitektur.",
+        "inLanguage": "id-ID",
+        "isPartOf": { "@id": "https://totebag-ochre.vercel.app/#website" },
+        "about": { "@id": "https://totebag-ochre.vercel.app/produk/tote-bag-linen-sablon-tinta-botanical#product" },
+        "datePublished": "2026-01-01",
+        "dateModified": "2026-11-10",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://totebag-ochre.vercel.app/" },
+            { "@type": "ListItem", "position": 2, "name": "Portfolio Produk", "item": "https://totebag-ochre.vercel.app/produk" },
+            { "@type": "ListItem", "position": 3, "name": "Tote Bag Linen Sablon Tinta Botanical", "item": "https://totebag-ochre.vercel.app/produk/tote-bag-linen-sablon-tinta-botanical" }
+          ]
+        },
+        "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", ".product-desc"] }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://totebag-ochre.vercel.app/produk/tote-bag-linen-sablon-tinta-botanical#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Berapa minimal order Tote Bag Linen Sablon Tinta Botanical?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Minimal order Tote Bag Linen Sablon Tinta Botanical di Totebag Malang adalah Min. 50 pcs. Semakin banyak kuantitas, semakin hemat biaya per pcs. Hubungi kami via WhatsApp untuk penawaran harga terbaik."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Berapa lama produksi Tote Bag Linen Sablon Tinta Botanical?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lead time produksi Tote Bag Linen Sablon Tinta Botanical adalah 7 - 14 Hari Kerja (Tersedia opsi ekspres). Waktu produksi dihitung setelah desain final disetujui dan DP dibayarkan. Tersedia opsi produksi ekspres untuk kebutuhan mendesak."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apa bahan yang digunakan untuk Tote Bag Linen Sablon Tinta Botanical?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tote Bag Linen Sablon Tinta Botanical menggunakan bahan Serat Rami Alami Premium Linen Ramie Breathable. Tersedia dalam berbagai pilihan warna dan bisa dikustom ukuran sesuai kebutuhan. Metode cetak tersedia: Sablon Waterbased Ramah Lingkungan / Bordir Halus."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah bisa custom ukuran untuk Tote Bag Linen Sablon Tinta Botanical?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya, ukuran standar Tote Bag Linen Sablon Tinta Botanical adalah 32 x 38 cm / 35 x 40 cm, namun bisa dikustom sesuai kebutuhan. Konsultasikan ukuran, warna bahan, dan desain logo via WhatsApp sebelum produksi."
+            }
+          }
+        ]
       }
-    }
+    ]
   }
   </script>
 

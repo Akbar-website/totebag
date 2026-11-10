@@ -51,21 +51,48 @@
   "@graph": [
     {
       "@type": "ContactPage",
-      "@id": "https://totebag-ochre.vercel.app/kontak.html#webpage",
-      "url": "https://totebag-ochre.vercel.app/kontak.html",
-      "name": "Kontak Totebag Malang",
+      "@id": "https://totebag-ochre.vercel.app/kontak#webpage",
+      "url": "https://totebag-ochre.vercel.app/kontak",
+      "name": "Kontak & Penawaran Tote Bag Custom | Totebag Malang",
+      "description": "Hubungi Totebag Malang untuk konsultasi dan penawaran tote bag custom. WhatsApp 082131087971, Senin–Sabtu 08.00–17.00 WIB.",
+      "inLanguage": "id-ID",
       "isPartOf": {
-        "@type": "WebSite",
-        "@id": "https://totebag-ochre.vercel.app/#website",
-        "url": "https://totebag-ochre.vercel.app/",
-        "name": "Totebag Malang"
+        "@id": "https://totebag-ochre.vercel.app/#website"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Beranda",
+            "item": "https://totebag-ochre.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Kontak & Penawaran",
+            "item": "https://totebag-ochre.vercel.app/kontak"
+          }
+        ]
       }
     },
     {
-      "@type": "Store",
+      "@type": [
+        "LocalBusiness",
+        "ClothingStore"
+      ],
       "@id": "https://totebag-ochre.vercel.app/#localbusiness",
       "name": "Totebag Malang",
+      "url": "https://totebag-ochre.vercel.app/",
+      "image": "https://totebag-ochre.vercel.app/assets/img/og-banner.jpg",
+      "logo": "https://totebag-ochre.vercel.app/assets/img/logo.png",
+      "description": "Konveksi tote bag custom di Malang, Jawa Timur. Produksi tas drill, cotton, kanvas, jute, leather, non-woven, nylon. Minimal 50 pcs, kirim seluruh Indonesia.",
       "telephone": "+6282131087971",
+      "email": "info@totebagmalang.id",
+      "priceRange": "Rp 10.000 - Rp 500.000/pcs",
+      "currenciesAccepted": "IDR",
+      "paymentAccepted": "Transfer Bank, QRIS",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Jl. Band. Palmerah No.D3-35B, Cemorokandang, Kec. Kedungkandang",
@@ -79,31 +106,45 @@
         "latitude": -7.9784,
         "longitude": 112.6606
       },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Indonesia"
+      },
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
           "opens": "08:00",
           "closes": "17:00"
         }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://totebag-ochre.vercel.app/kontak.html#breadcrumb",
-      "itemListElement": [
+      ],
+      "contactPoint": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Beranda",
-          "item": "https://totebag-ochre.vercel.app/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Kontak & Penawaran",
-          "item": "https://totebag-ochre.vercel.app/kontak.html"
+          "@type": "ContactPoint",
+          "telephone": "+6282131087971",
+          "contactType": "customer service",
+          "availableLanguage": "Indonesian",
+          "areaServed": "ID"
         }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "sameAs": [
+        "https://wa.me/6282131087971",
+        "https://www.instagram.com/totebagmalang",
+        "https://www.tokopedia.com/totebagmalang"
       ]
     }
   ]

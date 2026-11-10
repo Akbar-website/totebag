@@ -55,25 +55,241 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "WebSite",
+      "@id": "https://totebag-ochre.vercel.app/#website",
+      "url": "https://totebag-ochre.vercel.app/",
+      "name": "Totebag Malang",
+      "description": "Produsen tote bag custom di Malang: sablon logo, bordir, DTF. Bahan drill, cotton, kanvas, jute, leather, non-woven, nylon. Min. 50 pcs, kirim seluruh Indonesia.",
+      "inLanguage": "id-ID",
+      "publisher": {
+        "@id": "https://totebag-ochre.vercel.app/#org"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://totebag-ochre.vercel.app/produk?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": [
+        "Organization",
+        "LocalBusiness"
+      ],
       "@id": "https://totebag-ochre.vercel.app/#org",
       "name": "Totebag Malang",
+      "alternateName": [
+        "Totebag MLG",
+        "Konveksi Totebag Malang",
+        "TBM Custom"
+      ],
       "url": "https://totebag-ochre.vercel.app/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://totebag-ochre.vercel.app/assets/img/logo.png"
+        "url": "https://totebag-ochre.vercel.app/assets/img/logo.png",
+        "width": 512,
+        "height": 512,
+        "caption": "Logo Totebag Malang"
       },
-      "sameAs": ["https://wa.me/6282131087971"]
+      "image": "https://totebag-ochre.vercel.app/assets/img/og-banner.jpg",
+      "description": "Konveksi tote bag custom terpercaya di Malang sejak 2015. Produksi tas drill, cotton, kanvas, jute, leather, PU leather, non-woven, nylon, denim, linen, corduroy dengan sablon logo, bordir, dan DTF. Minimal order 50 pcs, kirim ke seluruh Indonesia.",
+      "foundingDate": "2015",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 25
+      },
+      "slogan": "Custom Tote Bag, Kualitas Konveksi, Harga Pabrik",
+      "telephone": "+6282131087971",
+      "email": "info@totebagmalang.id",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Band. Palmerah No.D3-35B, Cemorokandang, Kec. Kedungkandang",
+        "addressLocality": "Kota Malang",
+        "addressRegion": "Jawa Timur",
+        "postalCode": "65138",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -7.9784,
+        "longitude": 112.6606
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Indonesia"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+6282131087971",
+          "contactType": "customer service",
+          "availableLanguage": [
+            "Indonesian"
+          ],
+          "contactOption": "TollFree",
+          "areaServed": "ID"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+6282131087971",
+          "contactType": "sales",
+          "availableLanguage": [
+            "Indonesian"
+          ],
+          "areaServed": "ID"
+        }
+      ],
+      "sameAs": [
+        "https://wa.me/6282131087971",
+        "https://www.instagram.com/totebagmalang",
+        "https://www.tokopedia.com/totebagmalang"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Katalog Tote Bag Custom",
+        "numberOfItems": 72,
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Tote Bag Drill Custom"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Tote Bag Cotton Custom"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Tote Bag Kanvas Custom"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Goodie Bag Non Woven Custom"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Tote Bag Leather Custom"
+            }
+          }
+        ]
+      }
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://totebag-ochre.vercel.app/#breadcrumb",
-      "itemListElement": [
+      "@type": "WebPage",
+      "@id": "https://totebag-ochre.vercel.app/#webpage",
+      "url": "https://totebag-ochre.vercel.app/",
+      "name": "Totebag Malang | Produsen Tote Bag Custom Sablon Logo",
+      "description": "Pilihan bahan terlengkap: Drill, Cotton, Non Woven, Jute, Leather, PU Leather, Nylon, Denim, Linen, Corduroy. Pesan custom mulai 50 pcs.",
+      "inLanguage": "id-ID",
+      "isPartOf": {
+        "@id": "https://totebag-ochre.vercel.app/#website"
+      },
+      "about": {
+        "@id": "https://totebag-ochre.vercel.app/#org"
+      },
+      "datePublished": "2026-01-01",
+      "dateModified": "2026-11-10",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Beranda",
+            "item": "https://totebag-ochre.vercel.app/"
+          }
+        ]
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".hero-lead",
+          "#faq-section"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://totebag-ochre.vercel.app/#faq",
+      "mainEntity": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Beranda",
-          "item": "https://totebag-ochre.vercel.app/"
+          "@type": "Question",
+          "name": "Berapa minimal order tote bag custom di Totebag Malang?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minimal order (MOQ) tote bag custom di Totebag Malang adalah 50 pcs per desain. Untuk goodie bag non-woven dan spunbond, MOQ bisa mulai 100 pcs. Semakin banyak kuantitas, semakin hemat biaya per pcs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa saja bahan tote bag yang tersedia di Totebag Malang?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Totebag Malang menyediakan 10+ pilihan bahan: Drill (American/Japan), Cotton Combed, Kanvas Marsoto 12-14 oz, Non-Woven Spunbond, Jute/Goni Rustic, Genuine Leather (Kulit Sapi), PU Leather Sintetis, Nylon, Denim, Linen, dan Corduroy. Semua bisa dikustom warna, ukuran, dan sablon logo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa lama lead time produksi tote bag custom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lead time normal produksi tote bag custom di Totebag Malang adalah 7–14 hari kerja setelah desain dan DP disetujui. Tersedia opsi produksi ekspres 3–5 hari kerja untuk kebutuhan mendesak dengan koordinasi terlebih dahulu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Metode cetak apa yang digunakan untuk sablon logo tote bag?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Totebag Malang menggunakan 3 metode cetak utama: (1) Sablon Rubber/Plastisol — tajam, tahan lama, cocok untuk logo solid; (2) Bordir Komputer — premium, 3D, cocok untuk bahan drill dan kanvas; (3) DTF (Direct to Film) — full color tanpa batasan warna, cocok untuk desain fotorealistik."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah Totebag Malang melayani pengiriman ke seluruh Indonesia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya, Totebag Malang melayani pengiriman ke seluruh Indonesia melalui JNE, J&T, SiCepat, dan ekspedisi lainnya. Untuk wilayah Malang dan sekitarnya, tersedia antar langsung. Estimasi pengiriman 1–5 hari tergantung tujuan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bagaimana cara pesan tote bag custom di Totebag Malang?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cara pesan tote bag custom di Totebag Malang: (1) Hubungi via WhatsApp 082131087971; (2) Konsultasi bahan, ukuran, dan desain; (3) Kirim file logo/desain (AI/CDR/PNG HD); (4) Setujui mockup dan DP 50%; (5) Produksi 7–14 hari kerja; (6) Pelunasan dan pengiriman."
+          }
         }
       ]
     }
