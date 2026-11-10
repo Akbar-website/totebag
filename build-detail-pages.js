@@ -59,6 +59,7 @@ function generateProductHtml(p) {
   <meta property="og:description"
     content="Detail spesifikasi ${escapeHtml(p.name)}, ${escapeHtml(p.moq)}. Hubungi kami untuk penawaran harga terbaik.">
     <meta property="og:url" content="https://totebag-ochre.vercel.app/produk/${p.id}.html">
+  <link rel="image_src" href="https://totebag-ochre.vercel.app/${p.img}">
   <meta property="og:image" content="https://totebag-ochre.vercel.app/${p.img}">
   <meta property="og:image:secure_url" content="https://totebag-ochre.vercel.app/${p.img}">
   <meta property="og:image:type" content="image/webp">
@@ -68,6 +69,15 @@ function generateProductHtml(p) {
   <meta name="twitter:title" content="${escapeHtml(p.name)} | Totebag Malang">
   <meta name="twitter:description" content="Detail spesifikasi ${escapeHtml(p.name)}, ${p.moq}. Hubungi kami untuk penawaran harga terbaik.">
   <meta name="twitter:image" content="https://totebag-ochre.vercel.app/${p.img}">
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" href="../assets/img/favicon.png" type="image/png">
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
