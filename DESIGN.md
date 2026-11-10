@@ -21,9 +21,9 @@ Prinsip: Katalog editorial modern dengan palet warna natural organic. Latar puti
 3. `produk.html`: Halaman Portofolio Produk lengkap dengan filter kategori 11+ bahan dan detail view dinamis.
 4. `blog.html`: Halaman indeks Blog & Panduan berstandar editorial.
 5. Artikel Lengkap:
-   - `blog-minimal-order.html`: Panduan Minimal Order (MOQ)
-   - `blog-perbandingan-bahan.html`: Komparasi 11+ Bahan
-   - `blog-menyiapkan-file-logo.html`: Standar File Sablon Vektor & 300 DPI
+   - `blog/minimal-order.html` (`/blog/minimal-order`): Panduan Minimal Order (MOQ)
+   - `blog/perbandingan-bahan.html` (`/blog/perbandingan-bahan`): Komparasi 11+ Bahan
+   - `blog/menyiapkan-file-logo.html` (`/blog/menyiapkan-file-logo`): Standar File Sablon Vektor & 300 DPI
 6. `kontak.html`: Halaman Kontak & Workshop, peta Google Maps, dan form WhatsApp lengkap.
 
 ## 11+ Jenis Bahan yang Didukung

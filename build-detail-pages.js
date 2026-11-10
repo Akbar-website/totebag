@@ -29,7 +29,7 @@ function generateProductHtml(p) {
     return `
           <a href="${rel.id}" class="related-card" title="Lihat detail ${escapeHtml(rel.name)}">
             <div class="rel-thumb">
-              <img src="../${rel.img}" alt="${escapeHtml(rel.name)}" loading="lazy">
+              <img src="../${rel.img}" alt="${escapeHtml(rel.name)}" width="300" height="300" loading="lazy">
             </div>
             <div class="rel-title">${escapeHtml(rel.name)}</div>
             <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
@@ -39,15 +39,16 @@ function generateProductHtml(p) {
           </a>`;
   }).join('\n');
 
+  const metaDesc = `Pesan ${escapeHtml(p.name)} custom di Totebag Malang. ${escapeHtml(p.moq)}, jahitan rapi & sablon presisi. Konsultasi gratis via WA.`;
+
   return `<!doctype html>
 <html lang="id" prefix="og: https://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${escapeHtml(p.name)} - Spesifikasi & Pemesanan | Totebag Malang</title>
-  <meta name="description"
-    content="Pesan ${escapeHtml(p.name)} custom sablon & bordir di Totebag Malang. ${escapeHtml(p.moq)}, bahan ${escapeHtml(p.bahan)}. Konsultasi gratis via WhatsApp.">
+  <title>${escapeHtml(p.name)} | Totebag Malang</title>
+  <meta name="description" content="${metaDesc}">
   <link rel="canonical" href="https://totebag-ochre.vercel.app/produk/${p.id}">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="author" content="Totebag Malang">
@@ -56,9 +57,8 @@ function generateProductHtml(p) {
   <meta property="og:locale" content="id_ID">
   <meta property="og:site_name" content="Totebag Malang">
   <meta property="og:title" content="${escapeHtml(p.name)} | Totebag Malang">
-  <meta property="og:description"
-    content="Detail spesifikasi ${escapeHtml(p.name)}, ${escapeHtml(p.moq)}. Hubungi kami untuk penawaran harga terbaik.">
-    <meta property="og:url" content="https://totebag-ochre.vercel.app/produk/${p.id}">
+  <meta property="og:description" content="${metaDesc}">
+  <meta property="og:url" content="https://totebag-ochre.vercel.app/produk/${p.id}">
   <link rel="image_src" href="https://totebag-ochre.vercel.app/${p.img}">
   <meta property="og:image" content="https://totebag-ochre.vercel.app/${p.img}">
   <meta property="og:image:secure_url" content="https://totebag-ochre.vercel.app/${p.img}">
@@ -67,7 +67,7 @@ function generateProductHtml(p) {
   <meta itemprop="image" content="https://totebag-ochre.vercel.app/${p.img}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(p.name)} | Totebag Malang">
-  <meta name="twitter:description" content="Detail spesifikasi ${escapeHtml(p.name)}, ${p.moq}. Hubungi kami untuk penawaran harga terbaik.">
+  <meta name="twitter:description" content="${metaDesc}">
   <meta name="twitter:image" content="https://totebag-ochre.vercel.app/${p.img}">
   
   
@@ -541,7 +541,7 @@ function generateProductHtml(p) {
           <div class="col-lg-5">
             <div class="detail-gallery-card">
               <div class="detail-gallery-img-wrap">
-                <img src="../${p.img}" alt="${escapeHtml(p.name)}" loading="eager">
+                <img src="../${p.img}" alt="${escapeHtml(p.name)}" width="600" height="600" loading="eager">
               </div>
             </div>
           </div>
@@ -733,7 +733,9 @@ const redirectHtml = `<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="refresh" content="0;url=/produk">
-  <title>Mengarahkan ke Portofolio Produk...</title>
+  <link rel="canonical" href="https://totebag-ochre.vercel.app/produk">
+  <meta name="robots" content="noindex, follow">
+  <title>Mengarahkan ke Portofolio Produk... | Totebag Malang</title>
 </head>
 <body>
   <p>Mengarahkan ke <a href="/produk">Katalog Produk</a>...</p>

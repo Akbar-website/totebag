@@ -11,9 +11,9 @@ Website company profile, katalog produk multi-halaman, dan lead generation untuk
 - **Portofolio Produk (`produk.html`)**: Katalog interaktif lengkap dengan filter bahan (Drill, Cotton, Non Woven, Jute, Leather, PU Leather, Nylon, Polyester, Denim, Linen, Corduroy, Kanvas) dan detail view.
 - **Blog & Panduan (`blog.html`)**: Indeks artikel edukasi standar editorial.
 - **Halaman Artikel Lengkap**:
-  - `blog-minimal-order.html`: Panduan Lengkap Minimal Order (MOQ)
-  - `blog-perbandingan-bahan.html`: Komparasi 11+ Bahan Tote Bag
-  - `blog-menyiapkan-file-logo.html`: Standar Menyiapkan File Logo Sablon
+  - `blog/minimal-order.html` (`/blog/minimal-order`): Panduan Lengkap Minimal Order (MOQ)
+  - `blog/perbandingan-bahan.html` (`/blog/perbandingan-bahan`): Komparasi 11+ Bahan Tote Bag
+  - `blog/menyiapkan-file-logo.html` (`/blog/menyiapkan-file-logo`): Standar Menyiapkan File Logo Sablon
 - **Kontak & Penawaran (`kontak.html`)**: Alamat workshop, Google Maps, dan form penawaran dengan pilihan 11 bahan.
 
 ## 3. Fitur Utama

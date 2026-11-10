@@ -1,6 +1,18 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/produk/index",
+      "destination": "/produk",
+      "permanent": true
+    },
+    {
+      "source": "/produk/index.html",
+      "destination": "/produk",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/assets/img/(.*)",

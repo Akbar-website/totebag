@@ -10,12 +10,11 @@
 - Estimasi produksi: 7 sampai 14 hari kerja setelah desain disetujui
 
 ## Halaman Utama
-- [Beranda](https://www.totebagmalang.id/): Ringkasan layanan, sorotan 11 bahan, dan katalog kilat
-- [Tentang](https://www.totebagmalang.id/tentang.html): Profil workshop, kapasitas produksi, dan 6 tahap alur pengerjaan
-- [Portofolio Produk](https://www.totebagmalang.id/produk.html): Katalog lengkap 11+ bahan dengan filter interaktif dan detail spesifikasi
-- [Detail Produk](https://www.totebagmalang.id/detail-produk.html): Halaman spesifikasi teknis model produk, opsi custom, dan konsultasi WhatsApp
-- [Blog & Panduan](https://www.totebagmalang.id/blog.html): Kumpulan artikel edukatif seputar tote bag custom
-- [Panduan Minimal Order](https://www.totebagmalang.id/blog-minimal-order.html): Skema MOQ dan cara mengoptimalkan anggaran
-- [Perbandingan 11+ Bahan](https://www.totebagmalang.id/blog-perbandingan-bahan.html): Matriks komparasi kekuatan, estetika, dan teknik sablon
-- [Menyiapkan File Logo](https://www.totebagmalang.id/blog-menyiapkan-file-logo.html): Standar format vektor AI/SVG/PDF dan resolusi 300 DPI
-- [Kontak](https://www.totebagmalang.id/kontak.html): Alamat workshop di Kedungkandang, peta, dan form penawaran WhatsApp
+- [Beranda](https://totebag-ochre.vercel.app/): Ringkasan layanan, sorotan 11 bahan, dan katalog kilat
+- [Tentang](https://totebag-ochre.vercel.app/tentang): Profil workshop, kapasitas produksi, dan 6 tahap alur pengerjaan
+- [Portofolio Produk](https://totebag-ochre.vercel.app/produk): Katalog lengkap 11+ bahan dengan filter interaktif dan detail spesifikasi
+- [Blog & Panduan](https://totebag-ochre.vercel.app/blog): Kumpulan artikel edukatif seputar tote bag custom
+- [Panduan Minimal Order](https://totebag-ochre.vercel.app/blog/minimal-order): Skema MOQ dan cara mengoptimalkan anggaran
+- [Perbandingan 11+ Bahan](https://totebag-ochre.vercel.app/blog/perbandingan-bahan): Matriks komparasi kekuatan, estetika, dan teknik sablon
+- [Menyiapkan File Logo](https://totebag-ochre.vercel.app/blog/menyiapkan-file-logo): Standar format vektor AI/SVG/PDF dan resolusi 300 DPI
+- [Kontak](https://totebag-ochre.vercel.app/kontak): Alamat workshop di Kedungkandang, peta, dan form penawaran WhatsApp
