@@ -88,7 +88,7 @@ function generateProductHtml(p) {
     href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Nothing+You+Could+Do&display=swap"
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/css/style.css?v=3.1" rel="stylesheet">
+  <link href="../assets/css/style.css?v=4.0" rel="stylesheet">
 
   <script type="application/ld+json">
   {
@@ -271,24 +271,23 @@ function generateProductHtml(p) {
 
   <style>
     .product-detail-hero {
-      padding: 1.5rem 0 3.5rem;
+      padding: 1rem 0 4rem;
     }
 
     .detail-gallery-card {
-      background: #FFFFFF;
-      border: 1px solid var(--border-soft);
-      border-radius: 8px;
-      padding: 1.25rem;
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      padding: 1rem;
       position: sticky;
-      top: 100px;
-      box-shadow: 0 4px 18px rgba(27, 58, 92, 0.05);
+      top: 90px;
     }
 
     .detail-gallery-img-wrap {
       width: 100%;
       aspect-ratio: 1 / 1;
-      background: #FAFBFA;
-      border-radius: 6px;
+      background: var(--ice);
+      border-radius: 2px;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -300,7 +299,7 @@ function generateProductHtml(p) {
       height: 100%;
       object-fit: contain;
       display: block;
-      transition: transform 0.3s ease;
+      transition: transform 0.25s ease;
     }
 
     .detail-gallery-card:hover .detail-gallery-img-wrap img {
@@ -308,28 +307,28 @@ function generateProductHtml(p) {
     }
 
     .product-main-title {
-      font-size: clamp(1.85rem, 3.2vw, 2.45rem);
-      font-weight: 700;
-      color: var(--color-primary);
+      font-size: clamp(1.75rem, 3vw, 2.3rem);
+      font-weight: 600;
+      color: var(--navy);
       line-height: 1.2;
       margin-bottom: 1.25rem;
-      letter-spacing: -0.015em;
+      letter-spacing: -0.02em;
     }
 
     .detail-specs-list {
       list-style: none;
       padding: 0;
       margin: 0 0 1.5rem 0;
-      border-top: 1px solid var(--border-hairline);
-      border-bottom: 1px solid var(--border-hairline);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
     }
 
     .detail-specs-list li {
       padding: 0.65rem 0;
       display: flex;
       align-items: baseline;
-      border-bottom: 1px solid var(--border-hairline);
-      font-size: 0.98rem;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.93rem;
     }
 
     .detail-specs-list li:last-child {
@@ -337,21 +336,21 @@ function generateProductHtml(p) {
     }
 
     .detail-specs-list .spec-label {
-      width: 150px;
+      width: 140px;
       flex-shrink: 0;
       font-weight: 600;
-      color: var(--color-primary);
+      color: var(--navy);
     }
 
     .detail-specs-list .spec-val {
-      color: var(--body-text);
+      color: var(--ink);
       flex-grow: 1;
     }
 
     .detail-simple-desc {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: var(--body-text);
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--muted);
       margin-bottom: 1.75rem;
     }
 
@@ -362,25 +361,25 @@ function generateProductHtml(p) {
     .btn-wa-detail {
       display: inline-flex;
       align-items: center;
-      gap: 0.6rem;
-      font-size: 1.02rem;
+      gap: 0.5rem;
+      font-size: 0.95rem;
       font-weight: 700;
-      padding: 0.85rem 1.8rem;
-      border-radius: 4px;
-      box-shadow: 0 4px 14px rgba(227, 167, 47, 0.25);
+      padding: 0.75rem 1.6rem;
+      border-radius: 2px;
       text-decoration: none;
+      letter-spacing: 0.01em;
     }
 
     .related-section {
-      background-color: var(--color-bg-light);
-      padding: 3.5rem 0 4.5rem;
-      border-top: 1px solid var(--border-soft);
+      background-color: var(--ice-soft);
+      padding: 4rem 0 4.5rem;
+      border-top: 1px solid var(--rule);
     }
 
     .related-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 1.75rem 1.25rem;
+      gap: 1.5rem 1.25rem;
     }
 
     @media (max-width: 991.98px) {
@@ -397,28 +396,28 @@ function generateProductHtml(p) {
     }
 
     .related-card {
-      background: #FFFFFF;
-      border-radius: 6px;
+      background: var(--white);
+      border-radius: 2px;
       padding: 0.85rem;
-      border: 1px solid var(--border-soft);
+      border: 1px solid var(--rule);
       text-decoration: none;
-      color: var(--body-text);
+      color: var(--ink);
       display: flex;
       flex-direction: column;
       height: 100%;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: border-color 0.2s ease, transform 0.2s ease;
     }
 
     .related-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(27, 58, 92, 0.1);
-      color: var(--color-primary);
+      border-color: var(--sage);
+      transform: translateY(-2px);
+      color: var(--navy);
     }
 
     .related-card .rel-thumb {
       aspect-ratio: 1 / 1;
-      background: #FAFBFA;
-      border-radius: 4px;
+      background: var(--ice);
+      border-radius: 2px;
       overflow: hidden;
       margin-bottom: 0.75rem;
       display: flex;
@@ -435,45 +434,47 @@ function generateProductHtml(p) {
     }
 
     .related-card:hover .rel-thumb img {
-      transform: scale(1.05);
+      transform: scale(1.03);
     }
 
     .related-card .rel-title {
-      font-size: 0.92rem;
+      font-size: 0.88rem;
       font-weight: 600;
-      color: var(--color-primary);
+      color: var(--navy);
       line-height: 1.35;
       margin-bottom: 0.4rem;
       flex-grow: 1;
     }
 
     .related-card .rel-moq {
-      font-size: 0.82rem;
-      font-weight: 700;
-      color: var(--color-warm);
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--muted);
     }
 
     .related-banner-cta {
-      background: var(--color-primary);
-      color: #FFFFFF;
-      border-radius: 8px;
-      padding: 2rem;
-      margin-top: 3rem;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 2px;
+      padding: 2.5rem 2rem;
+      margin-top: 3.5rem;
       text-align: center;
     }
 
     .related-banner-cta h4 {
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: #FFFFFF;
-      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.015em;
     }
 
     .related-banner-cta p {
-      font-size: 0.96rem;
-      color: rgba(255, 255, 255, 0.88);
-      max-width: 600px;
-      margin: 0 auto 1.25rem;
+      font-size: 0.92rem;
+      color: rgba(255, 255, 255, 0.75);
+      max-width: 580px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.65;
     }
   </style>
 </head>
@@ -624,8 +625,7 @@ function generateProductHtml(p) {
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-4">
-          <a class="logo text-white mb-3 d-inline-block" href="/" style="color:#FFF !important;">totebag<span
-              style="color:#E6F0F5;">malang</span></a>
+          <a class="logo mb-3 d-inline-block" href="/">totebag<span>malang</span></a>
           <p class="small text-light">Produsen konveksi tote bag custom terpercaya di Kota Malang. Menghadirkan kualitas
             jahitan kokoh, sablon presisi, dan pilihan 11+ bahan terbaik untuk kebutuhan Anda.</p>
         </div>
