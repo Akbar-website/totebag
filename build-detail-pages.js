@@ -48,7 +48,7 @@ function generateProductHtml(p) {
   <title>${escapeHtml(p.name)} - Spesifikasi & Pemesanan | Totebag Malang</title>
   <meta name="description"
     content="Pesan ${escapeHtml(p.name)} custom sablon & bordir di Totebag Malang. ${escapeHtml(p.moq)}, bahan ${escapeHtml(p.bahan)}. Konsultasi gratis via WhatsApp.">
-  <link rel="canonical" href="https://www.totebagmalang.id/produk/${p.id}.html">
+  <link rel="canonical" href="https://totebag-ochre.vercel.app/produk/${p.id}.html">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="author" content="Totebag Malang">
   <meta name="theme-color" content="#1B3A5C">
@@ -58,7 +58,16 @@ function generateProductHtml(p) {
   <meta property="og:title" content="${escapeHtml(p.name)} | Totebag Malang">
   <meta property="og:description"
     content="Detail spesifikasi ${escapeHtml(p.name)}, ${escapeHtml(p.moq)}. Hubungi kami untuk penawaran harga terbaik.">
-  <meta property="og:image" content="https://www.totebagmalang.id/${p.img}">
+    <meta property="og:url" content="https://totebag-ochre.vercel.app/produk/${p.id}.html">
+  <meta property="og:image" content="https://totebag-ochre.vercel.app/${p.img}">
+  <meta property="og:image:secure_url" content="https://totebag-ochre.vercel.app/${p.img}">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:alt" content="${escapeHtml(p.name)}">
+  <meta itemprop="image" content="https://totebag-ochre.vercel.app/${p.img}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${escapeHtml(p.name)} | Totebag Malang">
+  <meta name="twitter:description" content="Detail spesifikasi ${escapeHtml(p.name)}, ${p.moq}. Hubungi kami untuk penawaran harga terbaik.">
+  <meta name="twitter:image" content="https://totebag-ochre.vercel.app/${p.img}">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" href="../assets/img/favicon.png" type="image/png">
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
@@ -76,7 +85,7 @@ function generateProductHtml(p) {
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": "${escapeHtml(p.name)}",
-    "image": "https://www.totebagmalang.id/${p.img}",
+    "image": "https://totebag-ochre.vercel.app/${p.img}",
     "description": "${escapeHtml(p.desc)}",
     "brand": {
       "@type": "Brand",
@@ -84,7 +93,7 @@ function generateProductHtml(p) {
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://www.totebagmalang.id/produk/${p.id}.html",
+      "url": "https://totebag-ochre.vercel.app/produk/${p.id}.html",
       "priceCurrency": "IDR",
       "price": "0",
       "priceValidUntil": "2027-12-31",
