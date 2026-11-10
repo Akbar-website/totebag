@@ -40,7 +40,7 @@ function generateProductHtml(p) {
   }).join('\n');
 
   return `<!doctype html>
-<html lang="id">
+<html lang="id" prefix="og: https://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8">
@@ -563,7 +563,7 @@ if (americanDrill) {
 
 // 2. produk/index.html redirect
 const redirectHtml = `<!doctype html>
-<html lang="id">
+<html lang="id" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="refresh" content="0;url=../produk.html">
