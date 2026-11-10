@@ -872,6 +872,54 @@ hr {
 
 .article-table tr:nth-child(even) td { background: var(--ice-soft); }
 
+/* ---- Article Table of Contents (Daftar Isi) ---- */
+.article-toc {
+  background: var(--ice-soft);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--navy);
+  border-radius: 2px;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+}
+
+.article-toc-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.article-toc ol {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}
+
+.article-toc li {
+  margin-bottom: 0.45rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.article-toc li:last-child {
+  margin-bottom: 0;
+}
+
+.article-toc a {
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.article-toc a:hover {
+  color: var(--mustard);
+  text-decoration: underline;
+}
+
 .baca-juga {
   background: var(--ice-soft);
   border-left: 3px solid var(--mustard-lt);

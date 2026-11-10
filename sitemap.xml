@@ -17,8 +17,13 @@
   </url>
   <url>
     <loc>https://totebag-ochre.vercel.app/blog</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://totebag-ochre.vercel.app/blog"/>
+  </url>
+  <url>
+    <loc>https://totebag-ochre.vercel.app/blog/totebag-custom-malang</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://totebag-ochre.vercel.app/blog/totebag-custom-malang"/>
   </url>
   <url>
     <loc>https://totebag-ochre.vercel.app/blog/minimal-order</loc>

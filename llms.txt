@@ -14,6 +14,7 @@
 - [Tentang](https://totebag-ochre.vercel.app/tentang): Profil workshop, kapasitas produksi, dan 6 tahap alur pengerjaan
 - [Portofolio Produk](https://totebag-ochre.vercel.app/produk): Katalog lengkap 11+ bahan dengan filter interaktif dan detail spesifikasi
 - [Blog & Panduan](https://totebag-ochre.vercel.app/blog): Kumpulan artikel edukatif seputar tote bag custom
+- [Panduan Utama Totebag Custom Malang](https://totebag-ochre.vercel.app/blog/totebag-custom-malang): Panduan komprehensif pengadaan souvenir kantor, event, pilihan bahan, sablon, harga, dan vendor
 - [Panduan Minimal Order](https://totebag-ochre.vercel.app/blog/minimal-order): Skema MOQ dan cara mengoptimalkan anggaran
 - [Perbandingan 11+ Bahan](https://totebag-ochre.vercel.app/blog/perbandingan-bahan): Matriks komparasi kekuatan, estetika, dan teknik sablon
 - [Menyiapkan File Logo](https://totebag-ochre.vercel.app/blog/menyiapkan-file-logo): Standar format vektor AI/SVG/PDF dan resolusi 300 DPI
