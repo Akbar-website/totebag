@@ -686,6 +686,7 @@ hr {
 }
 
 .article-thumb {
+  position: relative;
   height: 190px;
   background: var(--ice);
   display: flex;
@@ -929,7 +930,41 @@ hr {
   margin-top: 0.3rem;
 }
 
-/* ---- Related Articles ---- */
+/* ---- Related Articles & Sidebar ---- */
+.article-sidebar {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .article-sidebar.sticky-lg-top {
+    top: 90px;
+    z-index: 10;
+  }
+}
+
+.sidebar-widget {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-widget-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin: 0;
+}
+
+.sidebar-cta-card {
+  background: var(--ice-soft);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+
 .related-articles-section {
   padding: 3.5rem 0;
   border-top: 1px solid var(--rule);
