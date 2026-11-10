@@ -19,4 +19,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://www.totebagmalang.id/sitemap.xml
+Sitemap: https://totebag-ochre.vercel.app/sitemap.xml

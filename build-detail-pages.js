@@ -27,7 +27,7 @@ function generateProductHtml(p) {
 
   const relatedCardsHtml = related.map(rel => {
     return `
-          <a href="${rel.id}.html" class="related-card" title="Lihat detail ${escapeHtml(rel.name)}">
+          <a href="${rel.id}" class="related-card" title="Lihat detail ${escapeHtml(rel.name)}">
             <div class="rel-thumb">
               <img src="../${rel.img}" alt="${escapeHtml(rel.name)}" loading="lazy">
             </div>
@@ -48,7 +48,7 @@ function generateProductHtml(p) {
   <title>${escapeHtml(p.name)} - Spesifikasi & Pemesanan | Totebag Malang</title>
   <meta name="description"
     content="Pesan ${escapeHtml(p.name)} custom sablon & bordir di Totebag Malang. ${escapeHtml(p.moq)}, bahan ${escapeHtml(p.bahan)}. Konsultasi gratis via WhatsApp.">
-  <link rel="canonical" href="https://totebag-ochre.vercel.app/produk/${p.id}.html">
+  <link rel="canonical" href="https://totebag-ochre.vercel.app/produk/${p.id}">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="author" content="Totebag Malang">
   <meta name="theme-color" content="#1B3A5C">
@@ -58,7 +58,7 @@ function generateProductHtml(p) {
   <meta property="og:title" content="${escapeHtml(p.name)} | Totebag Malang">
   <meta property="og:description"
     content="Detail spesifikasi ${escapeHtml(p.name)}, ${escapeHtml(p.moq)}. Hubungi kami untuk penawaran harga terbaik.">
-    <meta property="og:url" content="https://totebag-ochre.vercel.app/produk/${p.id}.html">
+    <meta property="og:url" content="https://totebag-ochre.vercel.app/produk/${p.id}">
   <link rel="image_src" href="https://totebag-ochre.vercel.app/${p.img}">
   <meta property="og:image" content="https://totebag-ochre.vercel.app/${p.img}">
   <meta property="og:image:secure_url" content="https://totebag-ochre.vercel.app/${p.img}">
@@ -103,7 +103,7 @@ function generateProductHtml(p) {
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://totebag-ochre.vercel.app/produk/${p.id}.html",
+      "url": "https://totebag-ochre.vercel.app/produk/${p.id}",
       "priceCurrency": "IDR",
       "price": "0",
       "priceValidUntil": "2027-12-31",
@@ -328,18 +328,18 @@ function generateProductHtml(p) {
   <!-- Header & Universal Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Navigasi utama">
     <div class="container">
-      <a class="navbar-brand logo" href="../index.html">totebag<span>malang</span></a>
+      <a class="navbar-brand logo" href="/">totebag<span>malang</span></a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
         aria-controls="mainNav" aria-expanded="false" aria-label="Buka menu navigasi">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="../tentang.html">Tentang</a></li>
-          <li class="nav-item"><a class="nav-link active" href="../produk.html">Portofolio Produk</a></li>
-          <li class="nav-item"><a class="nav-link" href="../blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="../kontak.html">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="/tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/produk">Portofolio Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="/kontak">Kontak</a></li>
           <li class="nav-item ms-lg-2">
             <a class="btn btn-warm btn-sm-custom"
               href="${waUrl('Halo Totebag Malang, saya ingin konsultasi pemesanan tote bag custom.')}"
@@ -355,9 +355,9 @@ function generateProductHtml(p) {
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="../index.html">Beranda</a></li>
-          <li class="breadcrumb-item"><a href="../produk.html">Portofolio Produk</a></li>
-          <li class="breadcrumb-item"><a href="../produk.html?cat=${encodeURIComponent(p.category)}">${escapeHtml(p.category)}</a></li>
+          <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+          <li class="breadcrumb-item"><a href="/produk">Portofolio Produk</a></li>
+          <li class="breadcrumb-item"><a href="/produk?cat=${encodeURIComponent(p.category)}">${escapeHtml(p.category)}</a></li>
           <li class="breadcrumb-item active" aria-current="page">${escapeHtml(p.name)}</li>
         </ol>
       </nav>
@@ -371,7 +371,7 @@ function generateProductHtml(p) {
 
         <!-- Back to Catalog link -->
         <div class="mb-3">
-          <a href="../produk.html" class="text-decoration-none d-inline-flex align-items-center gap-2 fw-semibold text-muted small">
+          <a href="/produk" class="text-decoration-none d-inline-flex align-items-center gap-2 fw-semibold text-muted small">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
@@ -442,7 +442,7 @@ function generateProductHtml(p) {
             <p class="text-muted small mb-0">Pilihan model lain dalam kategori bahan yang sama atau sejenis untuk inspirasi tote bag custom Anda.</p>
           </div>
           <div class="mt-2 mt-md-0">
-            <a href="../produk.html" class="btn btn-outline-custom btn-sm">Lihat Semua Bahan &rarr;</a>
+            <a href="/produk" class="btn btn-outline-custom btn-sm">Lihat Semua Bahan &rarr;</a>
           </div>
         </div>
 
@@ -468,7 +468,7 @@ function generateProductHtml(p) {
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-4">
-          <a class="logo text-white mb-3 d-inline-block" href="../index.html" style="color:#FFF !important;">totebag<span
+          <a class="logo text-white mb-3 d-inline-block" href="/" style="color:#FFF !important;">totebag<span
               style="color:#E6F0F5;">malang</span></a>
           <p class="small text-light">Produsen konveksi tote bag custom terpercaya di Kota Malang. Menghadirkan kualitas
             jahitan kokoh, sablon presisi, dan pilihan 11+ bahan terbaik untuk kebutuhan Anda.</p>
@@ -476,22 +476,22 @@ function generateProductHtml(p) {
         <div class="col-6 col-lg-2">
           <h5>Halaman</h5>
           <ul class="list-unstyled small">
-            <li class="mb-2"><a href="../index.html">Beranda</a></li>
-            <li class="mb-2"><a href="../tentang.html">Tentang Kami</a></li>
-            <li class="mb-2"><a href="../produk.html">Portofolio Produk</a></li>
-            <li class="mb-2"><a href="../blog.html">Blog & Panduan</a></li>
-            <li class="mb-2"><a href="../kontak.html">Kontak</a></li>
+            <li class="mb-2"><a href="/">Beranda</a></li>
+            <li class="mb-2"><a href="/tentang">Tentang Kami</a></li>
+            <li class="mb-2"><a href="/produk">Portofolio Produk</a></li>
+            <li class="mb-2"><a href="/blog">Blog & Panduan</a></li>
+            <li class="mb-2"><a href="/kontak">Kontak</a></li>
           </ul>
         </div>
         <div class="col-6 col-lg-3">
           <h5>Bahan Pilihan</h5>
           <ul class="list-unstyled small">
-            <li class="mb-2"><a href="../produk.html?cat=Drill">Tote Bag Drill</a></li>
-            <li class="mb-2"><a href="../produk.html?cat=Cotton">Tote Bag Cotton</a></li>
-            <li class="mb-2"><a href="../produk.html?cat=Non%20Woven">Goodie Bag Non Woven</a></li>
-            <li class="mb-2"><a href="../produk.html?cat=Jute">Tote Bag Jute Goni</a></li>
-            <li class="mb-2"><a href="../produk.html?cat=Leather">Tote Bag Leather Asli</a></li>
-            <li class="mb-2"><a href="../produk.html?cat=Kanvas">Tote Bag Kanvas</a></li>
+            <li class="mb-2"><a href="/produk?cat=Drill">Tote Bag Drill</a></li>
+            <li class="mb-2"><a href="/produk?cat=Cotton">Tote Bag Cotton</a></li>
+            <li class="mb-2"><a href="/produk?cat=Non%20Woven">Goodie Bag Non Woven</a></li>
+            <li class="mb-2"><a href="/produk?cat=Jute">Tote Bag Jute Goni</a></li>
+            <li class="mb-2"><a href="/produk?cat=Leather">Tote Bag Leather Asli</a></li>
+            <li class="mb-2"><a href="/produk?cat=Kanvas">Tote Bag Kanvas</a></li>
           </ul>
         </div>
         <div class="col-lg-3">
@@ -576,11 +576,11 @@ const redirectHtml = `<!doctype html>
 <html lang="id" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0;url=../produk.html">
+  <meta http-equiv="refresh" content="0;url=/produk">
   <title>Mengarahkan ke Portofolio Produk...</title>
 </head>
 <body>
-  <p>Mengarahkan ke <a href="../produk.html">Katalog Produk</a>...</p>
+  <p>Mengarahkan ke <a href="/produk">Katalog Produk</a>...</p>
 </body>
 </html>`;
 fs.writeFileSync(TARGET_DIR + '/index.html', redirectHtml, 'utf8');
