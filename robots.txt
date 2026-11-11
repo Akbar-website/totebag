@@ -21,3 +21,4 @@ Allow: /
 
 Sitemap: https://www.totebag.my.id/sitemap.xml
 Sitemap: https://www.totebag.my.id/sitemap.txt
+Sitemap: https://www.totebag.my.id/sitemap_index.xml
