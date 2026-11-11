@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const OLD_DOMAIN = 'https://www.totebagmalang.id';
 const OLD_DOMAIN_NO_WWW = 'https://totebagmalang.id';
-const NEW_DOMAIN = 'https://totebag-ochre.vercel.app';
+const NEW_DOMAIN = 'https://www.totebag.my.id/';
 
 function updateMetaInHtml(content, currentUrl, pageTitle, pageDesc, pageImage = `${NEW_DOMAIN}/assets/img/og-cover.jpg`) {
   // Replace old domain

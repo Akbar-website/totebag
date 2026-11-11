@@ -49,7 +49,7 @@ function generateProductHtml(p) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(p.name)} | Totebag Malang</title>
   <meta name="description" content="${metaDesc}">
-  <link rel="canonical" href="https://totebag-ochre.vercel.app/produk/${p.id}">
+  <link rel="canonical" href="https://www.totebag.my.id/produk/${p.id}">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="author" content="Totebag Malang">
   <meta name="theme-color" content="#1B3A5C">
@@ -58,17 +58,17 @@ function generateProductHtml(p) {
   <meta property="og:site_name" content="Totebag Malang">
   <meta property="og:title" content="${escapeHtml(p.name)} | Totebag Malang">
   <meta property="og:description" content="${metaDesc}">
-  <meta property="og:url" content="https://totebag-ochre.vercel.app/produk/${p.id}">
-  <link rel="image_src" href="https://totebag-ochre.vercel.app/${p.img}">
-  <meta property="og:image" content="https://totebag-ochre.vercel.app/${p.img}">
-  <meta property="og:image:secure_url" content="https://totebag-ochre.vercel.app/${p.img}">
+  <meta property="og:url" content="https://www.totebag.my.id/produk/${p.id}">
+  <link rel="image_src" href="https://www.totebag.my.id/${p.img}">
+  <meta property="og:image" content="https://www.totebag.my.id/${p.img}">
+  <meta property="og:image:secure_url" content="https://www.totebag.my.id/${p.img}">
   <meta property="og:image:type" content="image/webp">
   <meta property="og:image:alt" content="${escapeHtml(p.name)}">
-  <meta itemprop="image" content="https://totebag-ochre.vercel.app/${p.img}">
+  <meta itemprop="image" content="https://www.totebag.my.id/${p.img}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(p.name)} | Totebag Malang">
   <meta name="twitter:description" content="${metaDesc}">
-  <meta name="twitter:image" content="https://totebag-ochre.vercel.app/${p.img}">
+  <meta name="twitter:image" content="https://www.totebag.my.id/${p.img}">
   
   
   
@@ -96,25 +96,25 @@ function generateProductHtml(p) {
     "@graph": [
       {
         "@type": "Product",
-        "@id": "https://totebag-ochre.vercel.app/produk/${p.id}#product",
+        "@id": "https://www.totebag.my.id/produk/${p.id}#product",
         "name": "${escapeHtml(p.name)}",
         "image": [
-          "https://totebag-ochre.vercel.app/${p.img}"
+          "https://www.totebag.my.id/${p.img}"
         ],
         "description": "${escapeHtml(p.desc)}",
-        "sku": "TBM-${p.id.toUpperCase().replace(/-/g,'').substring(0,20)}",
-        "mpn": "TBM-${p.id.toUpperCase().replace(/-/g,'').substring(0,20)}",
+        "sku": "TBM-${p.id.toUpperCase().replace(/-/g, '').substring(0, 20)}",
+        "mpn": "TBM-${p.id.toUpperCase().replace(/-/g, '').substring(0, 20)}",
         "category": "${escapeHtml(p.category)}",
         "material": "${escapeHtml(p.bahan)}",
-        "keywords": "tote bag custom, ${escapeHtml(p.category.toLowerCase())}, sablon logo, ${escapeHtml(p.bahan.split(' ').slice(0,3).join(' '))}",
+        "keywords": "tote bag custom, ${escapeHtml(p.category.toLowerCase())}, sablon logo, ${escapeHtml(p.bahan.split(' ').slice(0, 3).join(' '))}",
         "brand": {
           "@type": "Brand",
-          "@id": "https://totebag-ochre.vercel.app/#org",
+          "@id": "https://www.totebag.my.id/#org",
           "name": "Totebag Malang"
         },
         "manufacturer": {
           "@type": "Organization",
-          "@id": "https://totebag-ochre.vercel.app/#org",
+          "@id": "https://www.totebag.my.id/#org",
           "name": "Totebag Malang"
         },
         "aggregateRating": {
@@ -158,8 +158,8 @@ function generateProductHtml(p) {
         ],
         "offers": {
           "@type": "Offer",
-          "@id": "https://totebag-ochre.vercel.app/produk/${p.id}#offer",
-          "url": "https://totebag-ochre.vercel.app/produk/${p.id}",
+          "@id": "https://www.totebag.my.id/produk/${p.id}#offer",
+          "url": "https://www.totebag.my.id/produk/${p.id}",
           "priceCurrency": "IDR",
           "price": "0",
           "priceValidUntil": "2027-12-31",
@@ -168,9 +168,9 @@ function generateProductHtml(p) {
           "itemCondition": "https://schema.org/NewCondition",
           "seller": {
             "@type": "Organization",
-            "@id": "https://totebag-ochre.vercel.app/#org",
+            "@id": "https://www.totebag.my.id/#org",
             "name": "Totebag Malang",
-            "url": "https://totebag-ochre.vercel.app/"
+            "url": "https://www.totebag.my.id/"
           },
           "shippingDetails": {
             "@type": "OfferShippingDetails",
@@ -208,28 +208,28 @@ function generateProductHtml(p) {
       },
       {
         "@type": "WebPage",
-        "@id": "https://totebag-ochre.vercel.app/produk/${p.id}#webpage",
-        "url": "https://totebag-ochre.vercel.app/produk/${p.id}",
+        "@id": "https://www.totebag.my.id/produk/${p.id}#webpage",
+        "url": "https://www.totebag.my.id/produk/${p.id}",
         "name": "${escapeHtml(p.name)} | Totebag Malang",
         "description": "${escapeHtml(p.desc)}",
         "inLanguage": "id-ID",
-        "isPartOf": { "@id": "https://totebag-ochre.vercel.app/#website" },
-        "about": { "@id": "https://totebag-ochre.vercel.app/produk/${p.id}#product" },
+        "isPartOf": { "@id": "https://www.totebag.my.id/#website" },
+        "about": { "@id": "https://www.totebag.my.id/produk/${p.id}#product" },
         "datePublished": "2026-01-01",
         "dateModified": "2026-11-10",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://totebag-ochre.vercel.app/" },
-            { "@type": "ListItem", "position": 2, "name": "Portfolio Produk", "item": "https://totebag-ochre.vercel.app/produk" },
-            { "@type": "ListItem", "position": 3, "name": "${escapeHtml(p.name)}", "item": "https://totebag-ochre.vercel.app/produk/${p.id}" }
+            { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://www.totebag.my.id/" },
+            { "@type": "ListItem", "position": 2, "name": "Portfolio Produk", "item": "https://www.totebag.my.id/produk" },
+            { "@type": "ListItem", "position": 3, "name": "${escapeHtml(p.name)}", "item": "https://www.totebag.my.id/produk/${p.id}" }
           ]
         },
         "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", ".product-desc"] }
       },
       {
         "@type": "FAQPage",
-        "@id": "https://totebag-ochre.vercel.app/produk/${p.id}#faq",
+        "@id": "https://www.totebag.my.id/produk/${p.id}#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -733,7 +733,7 @@ const redirectHtml = `<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="refresh" content="0;url=/produk">
-  <link rel="canonical" href="https://totebag-ochre.vercel.app/produk">
+  <link rel="canonical" href="https://www.totebag.my.id/produk">
   <meta name="robots" content="noindex, follow">
   <title>Mengarahkan ke Portofolio Produk... | Totebag Malang</title>
 </head>
