@@ -10,13 +10,14 @@
 - Estimasi produksi: 7 sampai 14 hari kerja setelah desain disetujui
 
 ## Halaman Utama
-- [Beranda](https://totebag-ochre.vercel.app/): Ringkasan layanan, sorotan 11 bahan, dan katalog kilat
-- [Tentang](https://totebag-ochre.vercel.app/tentang): Profil workshop, kapasitas produksi, dan 6 tahap alur pengerjaan
-- [Portofolio Produk](https://totebag-ochre.vercel.app/produk): Katalog lengkap 11+ bahan dengan filter interaktif dan detail spesifikasi
-- [Blog & Panduan](https://totebag-ochre.vercel.app/blog): Kumpulan artikel edukatif seputar tote bag custom
-- [Panduan Utama Totebag Custom Malang](https://totebag-ochre.vercel.app/blog/totebag-custom-malang): Panduan komprehensif pengadaan souvenir kantor, event, pilihan bahan, sablon, harga, dan vendor
-- [Jenis Bahan Totebag Custom](https://totebag-ochre.vercel.app/blog/jenis-bahan-totebag-custom): Karakteristik spunbond, blacu, kanvas, dinir, cordura, dan tips memilih bahan acara
-- [Panduan Minimal Order](https://totebag-ochre.vercel.app/blog/minimal-order): Skema MOQ dan cara mengoptimalkan anggaran
-- [Perbandingan 11+ Bahan](https://totebag-ochre.vercel.app/blog/perbandingan-bahan): Matriks komparasi kekuatan, estetika, dan teknik sablon
-- [Menyiapkan File Logo](https://totebag-ochre.vercel.app/blog/menyiapkan-file-logo): Standar format vektor AI/SVG/PDF dan resolusi 300 DPI
-- [Kontak](https://totebag-ochre.vercel.app/kontak): Alamat workshop di Kedungkandang, peta, dan form penawaran WhatsApp
+- [Beranda](https://www.totebag.my.id/): Ringkasan layanan, sorotan 11 bahan, dan katalog kilat
+- [Tentang](https://www.totebag.my.id/tentang): Profil workshop, kapasitas produksi, dan 6 tahap alur pengerjaan
+- [Profil Penulis](https://www.totebag.my.id/penulis): Profil profesional Muhammad Akbar Nugraha, praktisi tekstil & kurator bahan
+- [Portofolio Produk](https://www.totebag.my.id/produk): Katalog lengkap 11+ bahan dengan filter interaktif dan detail spesifikasi
+- [Blog & Panduan](https://www.totebag.my.id/blog): Kumpulan artikel edukatif seputar tote bag custom
+- [Panduan Utama Totebag Custom Malang](https://www.totebag.my.id/blog/totebag-custom-malang): Panduan komprehensif pengadaan souvenir kantor, event, pilihan bahan, sablon, harga, dan vendor
+- [Jenis Bahan Totebag Custom](https://www.totebag.my.id/blog/jenis-bahan-totebag-custom): Karakteristik spunbond, blacu, kanvas, dinir, cordura, dan tips memilih bahan acara
+- [Panduan Minimal Order](https://www.totebag.my.id/blog/minimal-order): Skema MOQ dan cara mengoptimalkan anggaran
+- [Perbandingan 11+ Bahan](https://www.totebag.my.id/blog/perbandingan-bahan): Matriks komparasi kekuatan, estetika, dan teknik sablon
+- [Menyiapkan File Logo](https://www.totebag.my.id/blog/menyiapkan-file-logo): Standar format vektor AI/SVG/PDF dan resolusi 300 DPI
+- [Kontak](https://www.totebag.my.id/kontak): Alamat workshop di Kedungkandang, peta, dan form penawaran WhatsApp
